@@ -1,0 +1,12 @@
+README.md
+setup.py
+regresser/__init__.py
+regresser.egg-info/PKG-INFO
+regresser.egg-info/SOURCES.txt
+regresser.egg-info/dependency_links.txt
+regresser.egg-info/requires.txt
+regresser.egg-info/top_level.txt
+regresser/analyzer/__init__.py
+regresser/analyzer/pil_analyzer.py
+regresser/analyzer/wand_analyzer.py
+regresser/webdriver/__init__.py
