@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: regresser
-Version: 0.0.1
+Version: 0.0.2
 Summary: A visual regression library
 Home-page: https://github.com/jersobh/python-regresser
 Author: jersobh
@@ -16,8 +16,10 @@ Description: # Regresser - Visual Regression Library
         ### Webdriver
         First we need to create a baseline, your main version. Any other version will be compared to this one.
         
-        ```
-        webdriver.Driver(url='https://www.nytimes.com/', timeout=500) 
+        ```python
+        from regresser import webdriver
+        
+        webdriver.Driver(url='https://www.nytimes.com/', background=True, timeout=60)
         ```
         
         Now we're able to create another version. Eg.:
@@ -31,7 +33,7 @@ Description: # Regresser - Visual Regression Library
         
         Options:
         
-        ```
+        ```python
         version='staging' #version name 
         driver='firefox' #defaults to firefox. Use 'chrome' to enable chromedriver
         timeout=10 #timeout loading a page
@@ -51,7 +53,7 @@ Description: # Regresser - Visual Regression Library
         ### Results
         There are currently two outputs: alpha_diff.png and highlights.png. 
         The alpha_diff will hide everything except differences, and highlights will show differences in red color after comparing
-        versions.
+        versions. 
 Keywords: regression,tests,visual
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
